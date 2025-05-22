@@ -2,8 +2,8 @@
 
 Este projeto implementa um conversor de moedas utilizando uma arquitetura distribuída baseada em containers Docker. Ele é composto por três partes principais:
 
-- **Frontend**: Interface web estática servida via NGINX.
-- **Backend**: API Node.js responsável pelas conversões de moeda e acesso ao banco de dados.
+- **Frontend**: Interface web estática servida via NGINX;
+- **Backend**: API Node.js responsável pelas conversões de moeda e salvamento dos dados no banco de dados MongoDB;
 - **MongoDB**: Banco de dados NoSQL para armazenar histórico e taxas.
 
 A aplicação faz uso de programação paralela no backend para processar múltiplas conversões simultaneamente e é executada de forma distribuída através da rede Docker.
