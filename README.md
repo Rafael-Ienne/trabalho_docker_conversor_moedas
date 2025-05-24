@@ -38,7 +38,7 @@ Além disso, verifique:
 - Porta `27017` disponível para o MongoDB;
 - Porta usada pelo frontend.
 
-Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a sua API key no lugar da tag `<SUA_API_KEY>`. A geração da chave é gratuita e pode ser feita pelo seguinte link: [AwessomeAPI](https://docs.awesomeapi.com.br/instrucoes-api-key)
+Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a sua API key no lugar da tag `<SUA_API_KEY>`. A geração da chave é gratuita e pode ser feita por este [link](https://docs.awesomeapi.com.br/instrucoes-api-key).
 
 ## 🚀 Como executar o projeto (terminal do Docker)
 
@@ -79,3 +79,8 @@ Cria a imagem Docker do backend Node.js com base no Dockerfile.
 docker run --name backend --network myNetwork -p 3000:3000 backend-image
 ```
 Executa o servidor backend, que escutará requisições HTTP na porta 3000.
+
+Com todos os containers em execução, o frontend da aplicação estará acessível através da porta `8080`.  
+Abra seu navegador e acesse:
+
+🔗 [http://localhost:8080](http://localhost:8080)
