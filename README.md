@@ -24,6 +24,20 @@ TrabalhoDocker/
 
 ```
 
+## ✅ Pré-requisitos
+
+Antes de executar este projeto localmente, certifique-se de ter os seguintes requisitos instalados em sua máquina:
+
+- [Docker](https://www.docker.com/) — Para orquestrar os containers do backend, frontend e banco de dados MongoDB;
+- [Docker Compose](https://docs.docker.com/compose/) — Para facilitar a execução dos serviços com um único comando;
+- [Git](https://git-scm.com/) — Para clonar o repositório.
+
+Além disso, verifique:
+
+- Porta `3000` disponível para o backend
+- Porta `27017` disponível para o MongoDB
+- Porta usada pelo frontend (ex: `5173`, se for Vite, ou `8080`, se for outra ferramenta)
+
 ## 🚀 Como executar o projeto (terminal do Docker)
 
 ### 1. Criar a rede Docker
