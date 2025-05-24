@@ -52,7 +52,7 @@ Cria uma rede virtual que permite a comunicação entre os containers.
 ### 2. Rodar o container do frontend (NGINX)
 
 ```bash
-docker run --name frontend --network myNetwork -p 8080:80 -v "C:\Users\rafae\TrabalhoDocker\frontend:/usr/share/nginx/html" nginx:alpine
+docker run --name frontend --network myNetwork -p 8080:80 -v "<caminho/para/pasta-do-frontend>:/usr/share/nginx/html" nginx:alpine
 ```
 Serve os arquivos HTML, CSS e JS da interface web na porta 8080.
 
