@@ -8,7 +8,7 @@ Este projeto implementa um conversor de moedas utilizando uma arquitetura distri
 
 A aplicação faz uso de programação paralela no backend para processar múltiplas conversões simultaneamente e é executada de forma distribuída através da rede Docker.
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura do projeto
 
 ```bash
 
@@ -28,15 +28,15 @@ TrabalhoDocker/
 
 Antes de executar este projeto localmente, certifique-se de ter os seguintes requisitos instalados em sua máquina:
 
-- [Docker](https://www.docker.com/) — Para orquestrar os containers do backend, frontend e banco de dados MongoDB;
-- [Docker Compose](https://docs.docker.com/compose/) — Para facilitar a execução dos serviços com um único comando;
-- [Git](https://git-scm.com/) — Para clonar o repositório.
+- [Docker](https://www.docker.com/) — para orquestrar os containers do backend, frontend e banco de dados MongoDB;
+- [Docker Compose](https://docs.docker.com/compose/) — para facilitar a execução dos serviços com um único comando;
+- [Git](https://git-scm.com/) — para clonar o repositório.
 
 Além disso, verifique:
 
-- Porta `3000` disponível para o backend
-- Porta `27017` disponível para o MongoDB
-- Porta usada pelo frontend (ex: `5173`, se for Vite, ou `8080`, se for outra ferramenta)
+- Porta `3000` disponível para o backend;
+- Porta `27017` disponível para o MongoDB;
+- Porta usada pelo frontend.
 
 ## 🚀 Como executar o projeto (terminal do Docker)
 
