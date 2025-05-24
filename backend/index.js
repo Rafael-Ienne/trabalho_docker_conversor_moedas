@@ -46,7 +46,7 @@ const Conversion = mongoose.model('Conversion', conversionSchema);
 // Consulta de API de cotações de moedas 
 async function buscarCotacao(moeda) {
   try {
-    const response = await axios.get(`https://economia.awesomeapi.com.br/last/${moeda}-BRL?token=6d763cda52170852565013118c55406a284d7f877c026086cbb973d4df72919d`);
+    const response = await axios.get(`https://economia.awesomeapi.com.br/last/${moeda}-BRL?token=<SUA_API_KEY>`);
     return parseFloat(response.data[`${moeda}BRL`].bid);
   } catch (error) {
     console.error(`Erro ao buscar cotação de ${moeda}:`, error.message);
