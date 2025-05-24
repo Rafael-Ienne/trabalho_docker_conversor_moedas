@@ -38,7 +38,7 @@ Além disso, verifique:
 - Porta `27017` disponível para o MongoDB;
 - Porta usada pelo frontend.
 
-Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a access token para a API. Esse processo é gratuito e pode ser feito pelo seguinte link: 
+Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a sua API key no lugar da tag `<SUA_API_KEY>`. Esse processo é gratuito e pode ser feito pelo seguinte link: 
 
 ## 🚀 Como executar o projeto (terminal do Docker)
 
