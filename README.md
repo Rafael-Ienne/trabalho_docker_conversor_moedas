@@ -1,4 +1,4 @@
-# 💱 Conversor de Moedas – Programação Paralela e Distribuída com Docker
+# 💱 Conversor de Moedas – programação paralela e distribuída com Docker
 
 Este projeto implementa um conversor de moedas utilizando uma arquitetura distribuída baseada em containers Docker. Ele é composto por três partes principais:
 
@@ -24,7 +24,7 @@ TrabalhoDocker/
 
 ```
 
-## 🚀 Como executar o projeto
+## 🚀 Como executar o projeto (terminal do Docker)
 
 ### 1. Criar a rede Docker
 
