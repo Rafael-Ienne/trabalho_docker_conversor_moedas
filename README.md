@@ -47,7 +47,7 @@ Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a sua API ke
 ```bash
 docker network create myNetwork
 ```
-Cria uma rede virtual que permite a comunicação entre os containers.
+Cria uma rede virtual com o nome "myNetwork" que permite a comunicação entre os containers.
 
 ### 2. Rodar o container do frontend (NGINX)
 
