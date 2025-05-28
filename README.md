@@ -80,6 +80,8 @@ docker run --name backend --network myNetwork -p 3000:3000 backend-image
 ```
 Executa o servidor backend, que escutará requisições HTTP na porta 3000.
 
+### 6. Teste a aplicação no navegador
+
 Com todos os containers em execução, o frontend da aplicação estará acessível através da porta `8080`.  
 Abra seu navegador e acesse:
 
