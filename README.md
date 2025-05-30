@@ -21,7 +21,6 @@ TrabalhoDocker/
 │ ├── package.json
 │ ├── package-lock.json
 │ └── Dockerfile
-├── docker-compose.yml
 
 ```
 
