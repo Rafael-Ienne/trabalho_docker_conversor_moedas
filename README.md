@@ -40,19 +40,44 @@ Além disso, verifique:
 
 Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a sua API key no lugar da tag `<SUA_API_KEY>` para poder consultar as cotações de moedas em tempo real. A geração da chave é gratuita e pode ser feita por este [link](https://docs.awesomeapi.com.br/instrucoes-api-key).
 
-## 🚀 Como executar o projeto (terminal do Docker)
+## 🚀 Como executar o projeto (terminal do Docker)Add commentMore actions
 
-Após clonar o repositório e configurar a sua chave da API no backend (index.js), acesse a pasta onde está o arquivo `docker-compose.yml` e execute o comando abaixo para iniciar todos os serviços (frontend, backend e MongoDB) com Docker Compose:
+### 1. Criar a rede Docker
 
 ```bash
-docker-compose up -d
+docker network create myNetwork
 ```
-Este comando irá:
--  Criar a rede Docker "myNetwork": permite a comunicação entre os containers;
--  Rodar o container do frontend (NGINX): serve os arquivos HTML, CSS e JS da interface web na porta 8080;
--  Rodar o container do MongoDB: inicia o banco de dados MongoDB para armazenar dados de conversão e histórico;
--  Criar a imagem do backend: gera a imagem Docker do backend Node.js com base no Dockerfile;
--  Rodar o container do backend: executa o servidor backend, que escutará requisições HTTP na porta 3000.
+Cria uma rede virtual que permite a comunicação entre os containers.
+
+### 2. Rodar o container do frontend (NGINX)
+
+```bash
+docker run --name frontend --network myNetwork -p 8080:80 -v "C:\Users\rafae\TrabalhoDocker\frontend:/usr/share/nginx/html" nginx:alpine
+```
+Serve os arquivos HTML, CSS e JS da interface web na porta 8080.
+
+### 3. Rodar o container do MongoDB
+
+```bash
+docker run -d --name mongo --network myNetwork -p 27017:27017 mongo:latest
+```
+Inicia o banco de dados MongoDB para armazenar dados de conversão e histórico.
+
+### 4. Criar a imagem do backend
+
+Navegue até a pasta onde está o Dockerfile e execute o seguinte comando:
+
+```bash
+docker build -t backend-image .
+```
+Cria a imagem Docker do backend Node.js com base no Dockerfile.
+
+### 5. Rodar o container do backend
+
+```bash
+docker run --name backend --network myNetwork -p 3000:3000 backend-image
+```
+Executa o servidor backend, que escutará requisições HTTP na porta 3000.
 
 ## 💻 Como testar o projeto
 
