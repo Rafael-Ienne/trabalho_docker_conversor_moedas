@@ -29,7 +29,6 @@ TrabalhoDocker/
 Antes de executar este projeto localmente, certifique-se de ter os seguintes requisitos instalados em sua máquina:
 
 - [Docker](https://www.docker.com/) — para orquestrar os containers do backend, frontend e banco de dados MongoDB;
-- [Docker Compose](https://docs.docker.com/compose/) — para facilitar a execução dos serviços com um único comando;
 - [Git](https://git-scm.com/) — para clonar o repositório.
 
 Além disso, verifique:
@@ -40,7 +39,7 @@ Além disso, verifique:
 
 Por fim, na função `buscarCotacao` do arquivo `index.js`, colocar a sua API key no lugar da tag `<SUA_API_KEY>` para poder consultar as cotações de moedas em tempo real. A geração da chave é gratuita e pode ser feita por este [link](https://docs.awesomeapi.com.br/instrucoes-api-key).
 
-## 🚀 Como executar o projeto (terminal do Docker)Add commentMore actions
+## 🚀 Como executar o projeto (terminal do Docker)
 
 ### 1. Criar a rede Docker
 
